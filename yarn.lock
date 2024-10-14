@@ -662,13 +662,6 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@liaoliaots/nestjs-redis@^10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@liaoliaots/nestjs-redis/-/nestjs-redis-10.0.0.tgz#4afb60bc4659fe096c603fed11f7a087de1e4712"
-  integrity sha512-uCTmlzM4q+UYADwsJEQph0mbf4u0MrktFhByi50M5fNy/+fJoWlhSqrgvjtVKjHnqydxy1gyuU6vHJEOBp9cjg==
-  dependencies:
-    tslib "2.7.0"
-
 "@ljharb/through@^2.3.12":
   version "2.3.13"
   resolved "https://registry.npmjs.org/@ljharb/through/-/through-2.3.13.tgz"
