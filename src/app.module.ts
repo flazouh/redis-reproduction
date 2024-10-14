@@ -3,8 +3,8 @@ import { ConfigModule, ConfigModuleOptions } from '@nestjs/config';
 import { RedisModule } from '@liaoliaots/nestjs-redis';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TestQueueProcessor } from './test-queue.processor';
 import { BullModule } from '@nestjs/bullmq';
+import { TestQueueProcessor } from './test-queue.processor';
 const configModuleOptions = {
 	isGlobal: true,
 } as ConfigModuleOptions;
