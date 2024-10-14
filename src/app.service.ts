@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { Queue } from 'bull';
-import { InjectQueue } from '@nestjs/bull';
+import { Queue } from 'bullmq';
+import { InjectQueue } from '@nestjs/bullmq';
 
 @Injectable()
 export class AppService {
@@ -11,7 +11,7 @@ export class AppService {
 
 
   async addJobToQueue(data: any): Promise<void> {
-    this.logger.log(`Adding job to queue: ${data}`);
+    this.logger.log(`Adding job to queue: ${JSON.stringify(data)}`);
     await this.testQueue.add('process_message', data, {
       attempts: 3,
       backoff: {
@@ -19,6 +19,6 @@ export class AppService {
         delay: 1000,
       },
     });
-    this.logger.log(`Job added to queue: ${data}`);
+    this.logger.log(`Job added to queue: ${JSON.stringify(data)}`);
   }
 }

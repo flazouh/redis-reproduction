@@ -4,7 +4,7 @@ import { RedisModule } from '@liaoliaots/nestjs-redis';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TestQueueProcessor } from './test-queue.processor';
-import { BullModule } from '@nestjs/bull';
+import { BullModule } from '@nestjs/bullmq';
 const configModuleOptions = {
 	isGlobal: true,
 } as ConfigModuleOptions;
